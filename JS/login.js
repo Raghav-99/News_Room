@@ -1,6 +1,6 @@
-$('document').ready(() => {
+/*$('document').ready(() => {
     // setup a click handler on Login button
-    $('#login').click((event) => {
+    $('#login').submit((event) => {
         event.preventDefault();         // preventDefault() when invoked will prevent default actions
                                         // to be executed. In this case it will prevent the form from
                                         // submitting in default manner
@@ -9,4 +9,4 @@ $('document').ready(() => {
         location.href = 'main.html';    // will route to home page(acts like the <a> tag)
         return false;
     });
-})
+})*/
