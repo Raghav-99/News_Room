@@ -12,10 +12,12 @@
     <form method="post" id="form_login"><!---->
         <div>
             <label for="uname">User Name</label>
-            <input type="text" id="uname" name="uname" required placeholder="Username" maxlength="15"><br>
+            <input type="text" id="uname" name="uname" required placeholder="Username"  
+            pattern="[A-Za-z0-9_@]{6,}"
+            title="Contain uppercase,lowercase,number,special character @,_ and least 6 characters"><br>
 
             <label for="pass">Password</label>
-            <input type="password" id="pass" name="pass" required placeholder="Password" maxlength="50"><br>
+            <input type="password" id="pass" name="pass" required placeholder="Password"><br>
 
             <a href="forget_pass.html">Forgot Password?</a><br><!---->
 
