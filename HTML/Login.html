@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="../Image/Favicon.png">
+    <link rel="stylesheet" href="../bootstrap-5.0.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/Login.css">
     <script src="../JS/jquery-install/jquery-min-3.6.1.js"></script>
-    <script src="../JS/login.js"></script> <!---->
-    <title>Login</title>
+    <script src="../JS/login.js"></script>
 </head>
+
 <body>
-    <form method="post" id="form_login"><!---->
-        <div>
-            <label for="uname">User Name</label>
-            <input type="text" id="uname" name="uname" required placeholder="Username"  
-            pattern="[A-Za-z0-9_@]{6,}"
-            title="Contain uppercase,lowercase,number,special character @,_ and least 6 characters"><br>
 
-            <label for="pass">Password</label>
-            <input type="password" id="pass" name="pass" required placeholder="Password"><br>
-
-            <a href="forget_pass.html">Forgot Password?</a><br><!---->
-
-            <button type="submit" id="login" value="Login">Login</button>
+    <div class="sidenav">
+        <div class="login-main-text">
+           <h2> WELCOME TO </h2>
+           <h1>NEWS ROOM<h1><br> <h2>Login Page</h2>
+           <p>Login Page for User and Admin.</p>
         </div>
-    </form>
+    </div>
+
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form  method="post" id="form_login">
+                    <!---->
+                    <img src="../Image/Favicon.png" id="favi">
+                    <div class="form-group">
+                        <label for="uname">User Name</label>
+                        <input type="text" class="form-control" id="uname" name="uname" required placeholder="Username"
+                         pattern="[A-Za-z0-9_@]{6,}" title="Contain uppercase,lowercase,number,special character @,_ 
+                         and least 6 characters"><br>
+                    </div>
+
+                    <div class="form-group">
+                       <label for="pass">Password</label>
+                       <input type="password" class="form-control" id="pass" name="pass" required placeholder="Password"><br>
+                    </div>
+
+                    <a href="forget_pass.html">Forgot Password?</a><br><!---->
+                    <button class="btn btn-black" type="submit" id="login" value="Login">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
