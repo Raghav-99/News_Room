@@ -14,12 +14,14 @@
 </head>
 
 <body>
-
+   
     <div class="sidenav">
+        <h2 class="dt" id="date"></h2></span>   <!--TODO: make API call and insert date-time value-->
         <div class="login-main-text">
+           
            <h2> WELCOME TO </h2>
-           <h1>NEWS ROOM<h1><br> <h2>Login Page</h2>
-           <p>Login Page for User and Admin.</p>
+           <h1>NEWS ROOM<h1><br> <h2 id="lg">Login Page</h2>
+           <p>Login Page for <strong>User</strong> and <strong>Admin</strong></p>
         </div>
     </div>
 
@@ -28,21 +30,23 @@
             <div class="login-form">
                 <form  method="post" id="form_login">
                     <!---->
-                    <img src="../Image/Favicon.png" id="favi">
+                    <img src="../Image/weather.png" id="weather" class="responsive">
+                    <img src="../Image/Favicon.png" id="favi"><br><br>
+               
                     <div class="form-group">
                         <label for="uname">User Name</label>
                         <input type="text" class="form-control" id="uname" name="uname" required placeholder="Username"
                          pattern="[A-Za-z0-9_@]{6,}" title="Contain uppercase,lowercase,number,special character @,_ 
                          and least 6 characters"><br>
                     </div>
-
+                        
                     <div class="form-group">
                        <label for="pass">Password</label>
                        <input type="password" class="form-control" id="pass" name="pass" required placeholder="Password"><br>
                     </div>
 
-                    <a href="forget_pass.html">Forgot Password?</a><br><!---->
-                    <button class="btn btn-black" type="submit" id="login" value="Login">Login</button>
+                    <a href="forget_pass.html" class="form-group">Forgot Password?</a><br><br><!---->
+                    <button class="btn btn-black form-group" type="submit" id="login" value="Login">Login</button>
                 </form>
             </div>
         </div>
