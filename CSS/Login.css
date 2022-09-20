@@ -25,8 +25,8 @@
 
 @media screen and (min-width: 768px){
     .main{
-        margin-left: 50%; 
-        width: 50%;
+        margin-left: 40%; 
+        width: 60%;
     }
    .sidenav{
         width: 40%;
@@ -57,7 +57,7 @@
 }
 
 #favi{
-    margin-left: 20px;
+    margin-left: 180px;
 }
 strong{
    color: red;
@@ -67,7 +67,7 @@ h1{
 }
 .form-group{
 
-   margin-left: 10px;
+   margin-left: 30px;
 }
 .dt{
     font-weight: bold;
@@ -80,7 +80,7 @@ h1{
 }
 
 #weather{
-   margin-left: 300px;
+   margin-left: 0px;
    height: 70px;
    width: 70px;
 }
