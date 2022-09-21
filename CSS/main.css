@@ -3,12 +3,14 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 1em;
+  padding: .5em;
   margin-top: 2%;
   background-color: #004466;
   color: #fff;
-  font-size: .9rem;
+  font-size: 1.5rem;
+  justify-content:center;
 }
+
 
 .container {
   padding: 2px 16px;
@@ -18,25 +20,41 @@ header {
   background-color: #0044664c;
   padding: .5rem 0 .5rem 2%;
 }
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 
 header h1,
 header h2 {
   color: white;
 }
+div.scrollmenu {
+  background-color: rgb(51, 51, 51);
+  overflow: auto;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 div.scrollmenu a {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: rgb(250, 243, 243);
   text-align: center;
   padding: 14px;
   text-decoration: none;
   /* background-color: #666; */
 }
-.scrollmenu{
-  background-color: #666;
-}
+
 .active {
   background-color: rgb(126, 127, 130);
 }
+
+
+
 
 header h1 {
   font-size: 1.5rem;
