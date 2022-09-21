@@ -1,9 +1,32 @@
-body{
-        
-        background-image: url(../Image/password.jpg)
+.sidenav {
+  height: 100%;
+  background-color: black;
+  overflow-y: hidden;
+  padding-top: 20px;
 }
-@media only screen and (min-width: 400px) {
-    body {
-      background-image: url(../Image/password.jpg);
-    }
+
+.login-main-text{
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+@media screen and (min-width: 768px){
+  .main{
+      margin-left: 40%; 
+      width: 60%;
   }
+ .sidenav{
+      width: 40%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+  }
+  .login-form{
+      font-weight: bold;
+
+  }
+}
