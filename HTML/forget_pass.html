@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,51 @@
     <link rel="stylesheet" href="../bootstrap-5.0.2/dist/css/bootstrap.css">
 
 </head>
-<body>    
+
+<body>
     <div class="sidenav">
-        <h2 class="dt" id="date"></h2></span>   <!--TODO: make API call and insert date-time value-->
+        <h2 class="dt" id="date"></h2>
+
         <div class="login-main-text">
-           
-           <h2> WELCOME TO </h2>
-           <h1>RESET YOUR <strong> PASSWORD </strong>HERE</h1>
+            <h2> WELCOME TO </h2>
+            <h1>FORGET PASSWORD PAGE<h1><br>
+                    <p>You Can Reset your <strong>Password</strong> Here </p>
         </div>
     </div>
+
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form method="post" id="form_login">
+                    <!---->
+                    <div id="weather">
+                        <img src="" id="w_icon" alt="weather_icon">
+                        <small id="w_desc">
+                            <!-- This is the time in india we follow -->
+                            <!-- used <small> instead of <p> tag cuz it takes smaller space and is more concise. -->
+                        </small>
+                    </div>
+
+                    <img src="../Image/Favicon.png" alt="website_logo" id="favi"><br><br>
+
+                    <div class="form-group">
+                        <label for="Email">Email Id</label>
+                        <input type="email" class="form-control" id="ename" name="ename" required placeholder="Emial Id @ gmail.com"
+                            pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{2}"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pno">Phone Number</label>
+                        <input type="text" class="form-control" id="pno" name="pno" 
+                            placeholder="Mobile Number"><br>
+                    </div>
+                    <button class="btn btn-black form-group" type="submit" id="log" value="Login">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
 </body>
 </html>
