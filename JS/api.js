@@ -19,15 +19,15 @@ $('document').ready(() => {
         url: weather_data,
         method: 'GET',
         success: (data) => {
-            // console.log(data);
+            console.log(data);
 
             //* dynamically fetch weather icon according to weather
             weather_icon = "http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
 
             //* insert weather icon
             $('#w_icon').attr('src',weather_icon); 
-            //* render weather description and temp data
-            $('#w_desc').html(data.weather[0].description+'<br>'+data.main.temp);
+            //* render weather description, temp data and loc
+            $('#w_desc').html(data.weather[0].description+'<br>'+data.main.temp+'°C<br>'+data.name+`, ${data.sys.country}`);
         },
         // TODO: better error handling
         error: () => {
