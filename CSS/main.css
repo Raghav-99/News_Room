@@ -48,11 +48,7 @@ div.scrollmenu {
 
 div.scrollmenu a {
   display: inline-block;
-<<<<<<< HEAD
-  color: rgb(241, 235, 235);
-=======
   color: rgb(250, 243, 243);
->>>>>>> 23b6172ba9a95b793639219fee8c913d357ae39f
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -100,6 +96,7 @@ body {
 /* ---------------------- */
 
 .dt {
+  margin-right: 15px;
   font-weight: bold;
   font-size: large;
 }
@@ -109,7 +106,13 @@ body {
 }
 
 #w_icon {
+  margin-top: 8px;
   margin-left: 0px;
   height: 70px;
   width: 70px;
+}
+
+#w_desc {
+  margin-top: 8px;
+  padding: 5px;
 }
