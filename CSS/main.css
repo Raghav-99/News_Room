@@ -8,9 +8,13 @@ footer {
   background-color: #004466;
   color: #fff;
   font-size: 1.5rem;
-  justify-content:center;
+  justify-content: center;
 }
 
+.date {
+  justify-content: right;
+  color: #004466;
+}
 
 .container {
   padding: 2px 16px;
@@ -20,6 +24,7 @@ header {
   background-color: #0044664c;
   padding: .5rem 0 .5rem 2%;
 }
+
 .fa {
   padding: 0px;
   font-size: 30px;
@@ -33,9 +38,10 @@ header h1,
 header h2 {
   color: white;
 }
+
 div.scrollmenu {
   background-color: rgb(51, 51, 51);
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -85,4 +91,21 @@ body {
   font-weight: 400;
   color: #666;
   background-color: #fff;
+}
+
+/* ---------------------- */
+
+.dt {
+  font-weight: bold;
+  font-size: large;
+}
+#weather {
+  display: inline-flex;
+  justify-content: right;
+}
+
+#w_icon {
+  margin-left: 0px;
+  height: 70px;
+  width: 70px;
 }
