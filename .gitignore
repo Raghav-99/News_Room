@@ -1,1 +1,3 @@
 /json/test.json
+/json/node_modules
+/json/package-lock.json
