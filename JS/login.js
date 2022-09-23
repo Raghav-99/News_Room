@@ -9,7 +9,7 @@ $('document').ready(() => {
         var uname = $('#uname').val()
         var pass = $('#pass').val()
         var cred = `{"email":"${uname}", "password":"${pass}"}`
-        var cred_obj = $.parseJSON(cred); //parse to json to include in ajax request
+        var cred_obj = $.parseJSON(cred); //parse to json to include in ajax call
 
         $.ajax({
             url: "http://localhost:3000/login", 
@@ -29,7 +29,7 @@ $('document').ready(() => {
                 console.log("request unsuccessful!")
             },
             statusCode: {
-                404: () => {console.log("page not found")},
+                404: () => {console.log("page not found 404")},
                 400: () => {alert("Bad request!"); console.log("Bad request 400")},
                 200: () => {console.log("200 OK")}
             },
