@@ -18,7 +18,7 @@ $('document').ready(() => {
          window.location.replace('main.html');    // will route to home page(acts like the <a> tag)
 
          }
-         else window.location.alert("invalid input credentials...");
+         else window.alert("invalid input credentials...");
       });
     })
     
