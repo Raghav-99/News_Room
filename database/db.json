@@ -1,0 +1,29 @@
+{
+    "user":[
+        {
+        "id":27639,
+        "username":"Mohit@1",
+        "email":"mohitsin@cybage.com",
+        "password": "mohit"
+    
+        },
+        {
+            "id":27639,
+            "username":"Oshin@2",
+            "email":"oshins@cybage.com",
+            "password":"oshin"
+        },
+        {
+            "id":27639,
+            "username":"Raghav@3",
+            "email":"raghavme@cybage.com",
+            "password":"raghav"
+        },
+        {
+            "id":27639,
+            "username":"Pranay@4",
+            "email":"pranayba@cybage.com",
+            "password":"Pranay"
+        }
+    ]
+}
