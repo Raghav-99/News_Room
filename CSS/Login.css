@@ -82,7 +82,8 @@ h1 {
 .dt {
     font-weight: bold;
     font-size: xx-large;
-    color: blueviolet;
+    color: whitesmoke;
+    margin-left: 10px;
 }
 
 #weather {
@@ -93,4 +94,9 @@ h1 {
     margin-left: 0px;
     height: 70px;
     width: 70px;
+}
+
+#w_desc {
+    margin-top: 8px;
+    padding: 5px;
 }
