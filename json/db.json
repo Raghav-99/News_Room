@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "email": "raghavme@newsroom.com",
+      "password": "$2a$10$dKRtYMB.FyZCE2MgkQ7OAen3tJg/GOqkVfe6zlKCPKVOksuGGPNdu",
+      "id": 1
+    },
+    {
+      "email": "mohitsi@newsroom.com",
+      "password": "$2a$10$i8uZfSBbQ92ZejZvMfSEsOuaAwi6Dupp8TfssUUbf30r7D78ULB5y",
+      "id": 2
+    },
+    {
+      "email": "oshins@newsroom.com",
+      "password": "$2a$10$tFmCANh.A9wWXm78OuQYHu458IV8ZKKjwcC5cUtB5ee/Jvt1Wvq/i",
+      "id": 3
+    },
+    {
+      "email": "pranayb@newsroom.com",
+      "password": "$2a$10$u6VCHH5qZ5jxvqdGYTnTEO6m9O9KJe8P3yXUObXW.Fsr3eRJ7zT92",
+      "id": 4
+    },
+    {
+      "email": "admin@newsroom.com",
+      "password": "$2a$10$Kthvg1jmWKLnFDckqaOZJ.r5OxadhimxDrFoi8KVDSalxGwOZ58c6",
+      "id": 5
+    }
+  ]
+}

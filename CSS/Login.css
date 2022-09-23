@@ -1,37 +1,39 @@
-body {
-    font-family: "Lato", sans-serif;
-}
-.main-head{
+.main-head {
     height: 150px;
     background: #FFF;
-   
 }
+
 .sidenav {
     height: 100%;
-    background-color: #000;
-    overflow-x: hidden;
+    background-color: black;
+    overflow-y: hidden;
     padding-top: 20px;
 }
+
 .main {
     padding: 0px 10px;
 }
+
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav {
+        padding-top: 15px;
+    }
 }
 
 @media screen and (max-width: 450px) {
 
-    .register-form{
+    .register-form {
         margin-top: 10%;
     }
 }
 
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
+@media screen and (min-width: 768px) {
+    .main {
+        margin-left: 40%;
+        width: 60%;
     }
 
-    .sidenav{
+    .sidenav {
         width: 40%;
         position: fixed;
         z-index: 1;
@@ -39,30 +41,62 @@ body {
         left: 0;
     }
 
-    .login-form{
-        margin-top: 10%;
+    .login-form {
         font-weight: bold;
+
     }
 }
 
-.login-main-text{
+.login-main-text {
     margin-top: 20%;
     padding: 60px;
     color: #fff;
 }
 
-.login-main-text h2{
-    font-weight: 300;
+.login-main-text h2 {
+    font-weight: 200;
 }
 
-.btn-black{
+.btn-black {
     background-color: #000 !important;
     color: #fff;
 }
 
-#favi{
-    margin-left: 200px;
+#favi {
+    margin-left: 180px;
 }
-h2{
-    font-style: italic;
+
+strong {
+    color: red;
+}
+
+h1 {
+    color: red;
+}
+
+.form-group {
+
+    margin-left: 30px;
+}
+
+.dt {
+    font-weight: bold;
+    font-size: xx-large;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+#weather {
+    display: inline-flex;
+}
+
+#w_icon {
+    margin-left: 0px;
+    height: 70px;
+    width: 70px;
+}
+
+#w_desc {
+    margin-top: 8px;
+    padding: 5px;
 }
