@@ -2,5 +2,9 @@
   "devDependencies": {
     "json-server": "^0.17.0",
     "json-server-auth": "^2.1.0"
+  },
+  "scripts": {
+    "install-server": "npm install --save-dev json-server-auth json-server",
+    "run-server": "npx json-server-auth --watch db.json"
   }
 }
