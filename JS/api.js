@@ -37,8 +37,14 @@ $('document').ready(() => {
         },
         // TODO: better error handling
         error: () => {
-            console.log('Error occurred');
+            console.log('Error occurred while fetching data!!');
         },
+
+        statusCode: {
+            404: () => {console.log("page not found 404")},
+            400: () => {alert("Bad request on weather data!"); console.log("Bad request 400")},
+            200: () => {console.log("200 OK")}
+        }
     });
 
     //* -------------newsapi call from here
@@ -59,14 +65,16 @@ $('document').ready(() => {
                     console.log("0 results!")
                 }
                 else {
-                    alert(response.articles.length + ' results found!!')
+                    console.log(response.articles.length + ' results found!!')
 
                     $.each(response.articles, (ind, news) => {
                         //console.log(ind+":",news)
+                        var date = new Date(news.publishedAt).toUTCString() // convert date to UTC format
+
                         // dynamic insertion of thumbnails and other relevant details like title etc
                         $(`#thumb${ind + 1}`).attr('src', news.urlToImage);
                         $(`#thumb${ind + 1}`).attr('alt', "Image not found");
-                        $(`#card${ind + 1}`).html(`<h1>Title: ${news.title}</h1><br><p>Author: ${news.author}</p><br><small>Published At: ${news.publishedAt}</small><br>`)
+                        $(`#card${ind + 1}`).html(`<h1>Title: ${news.title}</h1><br><p>Author: ${news.author}</p><br><small>Published At: ${date}</small><br>`)
 
                         var src_list = $('a.src_news'); // array of <a> with class src_news
 
@@ -81,7 +89,7 @@ $('document').ready(() => {
                                     $(src).text(news.description);
                                 }
                                 else {
-                                    $(src).text('Source');
+                                    $(src).text('!!Description not available, unfortunately. Check out the source here!!');
                                 }
                             }
                         })
@@ -134,8 +142,6 @@ $('document').ready(() => {
     })
 
     $('#search').click(() => {
-        //event.preventDefault();
-
         var search_query = $('#search_query').val();
         console.log(search_query);
         req_param = `country=in&q=${search_query}`;
@@ -144,5 +150,5 @@ $('document').ready(() => {
     })
 
     // will execute if no click event on navbar child element happens
-    news_fetch();
+    news_fetch()
 })   
