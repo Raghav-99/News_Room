@@ -1,0 +1,11 @@
+body{
+       color: red;
+       background-image: url(../Image/background.jpg);
+  }
+.container{
+    margin-top: 5%;
+}
+
+label{
+    font-weight: bold;
+}
