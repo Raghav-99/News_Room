@@ -1,14 +1,16 @@
 footer {
-  position: absolute;
+  /* margin-top: 40em; */
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: .5em;
-  margin-top: 2%;
+  /* margin-top: 2%; */
   background-color: #004466;
   color: #fff;
   font-size: 1.5rem;
   justify-content: center;
+  clear: both;
+  /* position: fixed; */
 }
 
 .date {
@@ -23,6 +25,7 @@ footer {
 header {
   background-color: #0044664c;
   padding: .5rem 0 .5rem 2%;
+  
 }
 
 .fa {
@@ -40,13 +43,16 @@ header h2 {
 }
 
 div.scrollmenu {
+  /* float: left; */
   background-color: rgb(51, 51, 51);
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
+  
 }
 
 div.scrollmenu a {
+  float:left;
   display: inline-block;
   color: rgb(250, 243, 243);
   text-align: center;
@@ -86,6 +92,7 @@ main {
 }
 
 body {
+  position: relative;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -101,6 +108,7 @@ body {
   font-size: large;
 }
 #weather {
+  float: right;
   display: inline-flex;
   justify-content: right;
 }
@@ -127,14 +135,16 @@ body {
 /*body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 .flip-card {
   background-color: transparent;
   width: 200px;
   height: 200px;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 195px;
   perspective: 1000px;
   float: left;
   
@@ -172,8 +182,10 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+
 h1{
   font-size: x-small;
+  font-weight: bold;
 }
 p{
   font-size: x-small;
@@ -182,4 +194,8 @@ p{
 {
   width:200px;
   height:200px;
+}
+
+.flip-card a{
+  font-size: xx-small;
 }
