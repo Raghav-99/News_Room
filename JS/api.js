@@ -41,32 +41,37 @@ $('document').ready(() => {
     var news_query = "top-headlines";
     var req_param = "country=in"
     const news_api_key = "f1655db9861d409e9bcf34568463e261";
-    const news_data = `https://newsapi.org/v2/${news_query}?pageSize=15&${req_param}`
+    const news_data = `https://newsapi.org/v2/${news_query}?pageSize=18&${req_param}`
     //*---------------
 
     $.ajax({
         url: news_data,
         method: "GET",
-        dataType: "json",
+        dataType: "json",  // as api response datatype is json
         headers: {
-            "X-Api-Key": news_api_key
+            "X-Api-Key": news_api_key  // api key included in header to avoid public exposure
         },
         success: (response) => {
-            var i = -1;
             //console.log(response);
 
             //TODO: further addition of news left
             $.each(response.articles,(ind, news) => {
                 console.log(ind+":",news)
+                // dynamic insertion of thumbnails and other relevant details like title etc
                 $(`#thumb${ind+1}`).attr('src', news.urlToImage)
                 $(`#card${ind+1}`).html(`<h1>Title: ${news.title}</h1><br><p>Author: ${news.author}</p><br><small>Published At: ${news.publishedAt}</small><br>`)
 
                 var src_list = $('a.src_news');
                 $.each(src_list, (src_ind, src) => {
-                    //console.log(src)
+                    //console.log('ind:'+src_ind+' ',src)
                     if(src_ind === ind) {
                         $(src).attr('href', news.url);
-                        $(src).text(news.description);
+                        if(news.description != null) {
+                            $(src).text(news.description);
+                        }
+                        else {
+                            $(src).text('Source');
+                        }
                     }
                 })
             })
