@@ -105,6 +105,10 @@ body {
   justify-content: right;
 }
 
+.weather{
+  position: relative;
+ justify-content: right;
+}
 #w_icon {
   margin-top: 8px;
   margin-left: 0px;

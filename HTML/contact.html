@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Contact-Us Page</title>
     <link rel="icon" href="../Image/Favicon.png">
     <link rel="stylesheet" href="../bootstrap-5.0.2/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../JS/jquery-install/jquery-min-3.6.1.js"></script>
     <script src="../JS/login.js"></script>
     <script src="../JS/api.js"></script>
@@ -21,8 +22,8 @@
         <div class="login-main-text">
             <h2> WELCOME TO </h2>
             <h1>NEWS ROOM<h1><br>
-                    <h2 id="lg">Login Page</h2>
-                    <p>Login Page for <strong>User</strong> and <strong>Admin</strong></p>
+                    <h2 id="lg">Contact-Us Page</h2>
+                    <!-- <p>Login Page for <strong>User</strong> and <strong>Admin</strong></p> -->
         </div>
     </div>
 
@@ -48,31 +49,21 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="pass">Password</label>
-                        <input type="password" class="form-control" id="pass" name="pass" required
-                            placeholder="Password"><br>
-                    </div>
+                        <label for="Email">Email Id</label>
+                        <input type="email" class="form-control" id="ename" name="ename" required
+                            placeholder="Emial Id @ gmail.com" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{2}"><br>
+                    </div><br>
 
-                    <a href="forget_pass.html" class="form-group">Forgot Password?</a><br><br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Enter Your Queries.</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div><br>
                     <!---->
-                    <button class="btn btn-black form-group" type="submit" id="login" value="Login">Login</button>
+                    <button class="btn btn-black form-group" type="submit" id="submit" value="Submit">Submit</button>
                 </form>
             </div>
         </div>
     </div> 
-    <footer>
-        <ul class="list">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <p></p>
-            <p>@copyright PROM news 2022</p>
-        </ul>
-       
-    </footer>
-      
-    
 </body>
 
 </html>
