@@ -54,7 +54,7 @@ $('document').ready(() => {
             method: "GET",
             dataType: "json",  // as api response datatype is json
             headers: {
-                "X-Api-Key": news_api_key  // api key included in header to avoid public exposure
+                "X-Api-Key": news_api_key,  // api key included in header to avoid public exposure
             },
             success: (response) => {
                 console.log(response);
@@ -100,6 +100,7 @@ $('document').ready(() => {
     }
 
     // click listeners for each navbar child elements
+    
     $('#nav1').click(() => {
         req_param = "country=in&category=general";
         news_fetch()
@@ -140,7 +141,7 @@ $('document').ready(() => {
         req_param = "country=in&category=sports";
         news_fetch()
     })
-
+    
     $('#search').click(() => {
         var search_query = $('#search_query').val();
         console.log(search_query);
