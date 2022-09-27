@@ -5,81 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROM NEWS</title>
+    <title>Admin Page</title>
     <link rel="icon" href="../Image/Favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../CSS/main.css" rel="stylesheet">
+    <link href="../CSS/Admin.css" rel="stylesheet">
 
-    <!--TODO: insert script if needed-->
     <script src="../JS/jquery-install/jquery-min-3.6.1.js"></script>
     <script type="text/javascript" src="/JS/api.js"></script>
-    <!-- <script src="../JS/nav.js"></script> -->
 
+    <link rel="icon" href="../Image/Favicon.png">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div id="header-container">
-            <header>
-                <nav class="navbar ">
+    <img src="../Image/Favicon.png" id="img1">
+    <h1 class="new">Welcome to Admin Page</h1><br><br>
 
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="main.html">PROM News</a>
-                        </div>
-
-                        <form class="navbar-form navbar" id="search_form">
-                            <div class="input-group col-md-7 col-16 col-lg-9">
-                                <input type="text" id="search_query" class="form-control" placeholder="Search" name="search">
-                                <div class="input-group-btn">
-                                    <button title="Search" class="btn btn-default" id="search" type="button">
-                                        <i class="glyphicon glyphicon-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id="weather">
-                                <img src="" id="w_icon" alt="weather_icon">
-                                <small id="w_desc">
-                                    <!-- This is the time in india we follow -->
-                                    <!-- used <small> instead of <p> tag cuz it takes smaller space and is more concise. -->
-                                </small>
-                            </div>
-                            <!-- <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                            </ul> -->
-                        </form>
-
-                    </div>
-                </nav>
-            </header>
-        </div>
-
-        <div id="myTopnav navWrapper " class=" topnav scrollmenu">
-
-            <nav class="">
-                <a class=".cat_nav" id="nav1">General</a>
-                <a class=".cat_nav" id="nav2">Technology</a>
-                <a class=".cat_nav" id="nav3">Business</a>
-                <a class=".cat_nav" id="nav4">Entertainment</a>
-                <a class=".cat_nav" id="nav5">Health</a>
-                <a class=".cat_nav" id="nav6">Science</a>
-                <a class=".cat_nav" id="nav7">Sports</a>
-                <div class="nav navbar-right">
-                    <a class="dt" id="date"></a>
-                </div>
-            </nav>
-        </div>
-
-
-
-        <div class="keepOpen"></div>
-
-        <span>
-
-    </span>
-    <!--body-->
     <div class="flip-card">
         <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -89,6 +30,7 @@
             </div>
         </div>
         <a href="" class="src_news" ></a><!--To Add New Link-->
+        <button type="button" id="edit1">Edit</button>
     </div>
 
     <div class="flip-card">
@@ -100,6 +42,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit2">Edit</button>
     </div>
  
     <div class="flip-card">
@@ -111,6 +54,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit3">Edit</button>
     </div>
    
     <div class="flip-card">
@@ -122,6 +66,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit4">Edit</button>
     </div>
   
     <div class="flip-card">
@@ -133,6 +78,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit5">Edit</button>
     </div>
 
     <div class="flip-card">
@@ -144,6 +90,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit6">Edit</button>
     </div>
     
     
@@ -156,6 +103,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit7">Edit</button>
     </div>
     
                   
@@ -169,6 +117,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit8">Edit</button>
     </div>
  
                   
@@ -182,6 +131,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit9">Edit</button>
     </div>
  
                   
@@ -195,6 +145,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit10">Edit</button>
     </div>          
   
     <div class="flip-card">
@@ -206,6 +157,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit11">Edit</button>
     </div>
     
                  
@@ -219,6 +171,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit12">Edit</button>
     </div>
  
                  
@@ -232,6 +185,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit13">Edit</button>
     </div>
                  
     <div class="flip-card">
@@ -243,6 +197,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit14">Edit</button>
     </div>
  
                  
@@ -256,6 +211,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit15">Edit</button>
     </div>
     
     <div class="flip-card">
@@ -267,6 +223,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit16">Edit</button>
     </div>
 
     <div class="flip-card">
@@ -278,6 +235,7 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit17">Edit</button>
     </div>
   
     
@@ -290,23 +248,8 @@
             </div>
         </div>
         <a href="" class="src_news"></a> <!--To Add New Link-->
+        <button type="button" id="edit18">Edit</button>
     </div>
-  
-    
-
-
- 
-
-    <footer>
-        <ul class="list">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <p></p>
-            <p>@copyright PROM news 2022</p>
-        </ul>
-    </footer>
 
     </div>
 </body>
