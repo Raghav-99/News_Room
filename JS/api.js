@@ -54,7 +54,7 @@ $('document').ready(() => {
             method: "GET",
             dataType: "json",  // as api response datatype is json
             headers: {
-                "X-Api-Key": news_api_key,  // api key included in header to avoid public exposure
+                "X-API-Key": news_api_key,  // api key included in header to avoid public exposure
             },
             success: (response) => {
                 console.log(response);
