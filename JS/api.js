@@ -35,7 +35,7 @@ $('document').ready(() => {
             //* render weather description, temp data and loc
             $('#w_desc').html(data.weather[0].description + '<br>' + data.main.temp + '°C<br>' + data.name + `, ${data.sys.country}`);
         },
-        // TODO: better error handling
+
         error: () => {
             console.log('Error occurred while fetching data!!');
         },
